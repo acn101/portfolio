@@ -5,9 +5,10 @@ export default function TopBar() {
 
   const navLinks = [
     { label: 'About', href: '#' },
-    { label: 'Skills', href: '#' },
-    { label: 'Projects', href: '#' },
-    { label: 'Contact', href: '#' },
+    { label: 'Resume', href: '#resume' },
+    { label: 'Skills', href: '#skills' },
+    { label: 'Projects', href: '#projects' },
+    { label: 'Contact', href: '#contact' },
   ];
 
   return (

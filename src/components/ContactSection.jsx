@@ -5,7 +5,7 @@ export default function ContactSection() {
   ];
 
   return (
-    <section className="w-full bg-gray-50 dark:bg-gray-900 p-8 transition-colors duration-500">
+    <section id="contact" className="w-full bg-gray-50 dark:bg-gray-900 p-8 transition-colors duration-500">
       <div className="max-w-5xl mx-auto rounded-lg p-6">
         <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">Contact & Links</h2>
         <ul className="space-y-4 text-gray-700 dark:text-gray-300">

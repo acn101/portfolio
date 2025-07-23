@@ -37,7 +37,7 @@ export default function SkillsSection() {
   }, []);
 
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 p-8 transition-colors duration-500 w-full mb-12">
+    <section id="skills" className="bg-gray-50 dark:bg-gray-900 p-8 transition-colors duration-500 w-full mb-12">
       <div className="max-w-5xl mx-auto rounded-lg p-6">
         <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">Skills</h2>
 
@@ -48,7 +48,6 @@ export default function SkillsSection() {
               <div className="flex-1">
                 <div className="flex justify-between mb-1 text-gray-700 dark:text-gray-300 font-semibold">
                   <span>{skill.name}</span>
-                  {/* <span>{animatedWidths[idx]}%</span> */}
                 </div>
                 <div className="flex justify-between mb-2 text-gray-600 dark:text-gray-400 text-sm">
                   <span>{skill.experience} years of experience</span>
@@ -74,7 +73,6 @@ export default function SkillsSection() {
               <div className="flex-1">
                 <div className="flex justify-between mb-1 text-gray-700 dark:text-gray-300 font-semibold">
                   <span>{technology.name}</span>
-                  {/* <span>{animatedWidths[idx]}%</span> */}
                 </div>
                 <div className="flex justify-between mb-2 text-gray-600 dark:text-gray-400 text-sm">
                   <span>{technology.experience} years of experience</span>

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AboutSection() {
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 p-8 transition-colors duration-500 mb-12">
+    <section id="about" className="bg-gray-50 dark:bg-gray-900 p-8 transition-colors duration-500 mb-12">
       <div className="flex flex-col md:flex-row items-center md:items-start gap-8 max-w-5xl mx-auto">
         <div className="w-40 h-40 md:w-60 md:h-60 overflow-hidden rounded-full shadow-lg dark:shadow-black flex-shrink-0">
           <img
