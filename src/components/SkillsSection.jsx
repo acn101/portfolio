@@ -1,28 +1,33 @@
 import { useState, useEffect } from "react";
-import { SiJavascript, SiTypescript, SiReact, SiCss3, SiSass, SiHtml5, SiPython, SiDotnet } from 'react-icons/si';
+import { SiJavascript, SiTypescript, SiReact, SiCss3, SiSass, SiHtml5, SiPython, SiDotnet, SiDjango, SiDocker, SiGit } from 'react-icons/si';
 import { SiAdobephotoshop, SiUnity, SiUnrealengine } from 'react-icons/si';
 import { FaAudible } from 'react-icons/fa';
-import { DiVisualstudio } from "react-icons/di";
+import { DiJava, DiJira, DiVisualstudio } from "react-icons/di";
 import { BiLogoVisualStudio } from "react-icons/bi";
 
 const skills = [
   { name: "JavaScript", level: 100, experience: 5, icon: <SiJavascript size={28} className="text-yellow-500" /> },
-  { name: "Typescript", level: 90, experience: 4, icon: <SiTypescript size={28} className="text-blue-500" /> },
   { name: "React", level: 95, experience: 5, icon: <SiReact size={28} className="text-cyan-400" /> },
   { name: "CSS", level: 100, experience: 5, icon: <SiCss3 size={28} className="text-blue-600" /> },
-  { name: "SASS/SCSS", level: 90, experience: 4, icon: <SiSass size={28} className="text-pink-600" /> },
   { name: "HTML", level: 100, experience: 5, icon: <SiHtml5 size={28} className="text-orange-500" /> },
-  { name: "C#", level: 80, experience: 3, icon: <SiDotnet size={28} className="text-teal-500" /> },
+  { name: "Git", level: 80, experience: 5, icon: <SiGit size={28} className="text-orange-600" /> },
+  { name: "Typescript", level: 90, experience: 4, icon: <SiTypescript size={28} className="text-blue-500" /> },
+  { name: "SASS/SCSS", level: 90, experience: 4, icon: <SiSass size={28} className="text-pink-600" /> },
+  { name: "Java", level: 80, experience: 3, icon: <DiJava size={28} className="text-red-600" /> },
+  { name: "C#", level: 70, experience: 2, icon: <SiDotnet size={28} className="text-teal-500" /> },
   { name: "Python", level: 60, experience: 2, icon: <SiPython size={28} className="text-yellow-300" /> },
 ];
 
 const technologies = [
-  { name: "Visual Studio", level: 100, experience: 2, icon: <DiVisualstudio size={28} className="text-blue-800" /> },
-  { name: "Visual Studio Code", level: 100, experience: 2, icon: <BiLogoVisualStudio size={28} className="text-blue-400" /> },
-  { name: "Photoshop", level: 100, experience: 2, icon: <SiAdobephotoshop size={28} className="text-pink-600" /> },
-  { name: "Unity", level: 90, experience: 2, icon: <SiUnity size={28} className="text-teal-700" /> },
-  { name: "Unreal Engine", level: 50, experience: 2, icon: <SiUnrealengine size={28} className="text-purple-700" /> },
+  { name: "Visual Studio Code", level: 100, experience: 5, icon: <BiLogoVisualStudio size={28} className="text-blue-400" /> },
+  { name: "Photoshop", level: 100, experience: 5, icon: <SiAdobephotoshop size={28} className="text-pink-600" /> },
+  { name: "Visual Studio", level: 100, experience: 3, icon: <DiVisualstudio size={28} className="text-blue-800" /> },
+  { name: "Docker", level: 80, experience: 3, icon: <SiDocker size={28} className="text-sky-400" /> },
+  { name: "Jira", level: 100, experience: 3, icon: <DiJira size={28} className="text-blue-800" /> },
+  { name: "Unity", level: 80, experience: 2, icon: <SiUnity size={28} className="text-teal-700" /> },
   { name: "Audacity", level: 100, experience: 2, icon: <FaAudible size={28} className="text-green-500" /> },
+  { name: "Django", level: 60, experience: 1, icon: <SiDjango size={28} className="text-green-800" /> },
+  { name: "Unreal Engine", level: 50, experience: 1, icon: <SiUnrealengine size={28} className="text-purple-700" /> },
 ];
 
 
