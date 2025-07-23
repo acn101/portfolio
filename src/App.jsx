@@ -1,10 +1,11 @@
-import './App.css'
-import AboutSection from './components/AboutSection';
-import ContactSection from './components/ContactSection';
-import ProjectsSection from './components/ProjectsSection';
-import ResumeSection from './components/ResumeSection';
-import SkillsSection from './components/SkillsSection';
-import TopBar from './components/TopBar';
+import "./App.css";
+import AboutSection from "./components/AboutSection";
+import ContactSection from "./components/ContactSection";
+import ProjectsSection from "./components/ProjectsSection";
+import ResumeSection from "./components/ResumeSection";
+import SkillsSection from "./components/SkillsSection";
+import TopBar from "./components/TopBar";
+import WorkExperienceSection from "./components/WorkExperience";
 
 function App() {
   return (
@@ -14,11 +15,12 @@ function App() {
         <AboutSection />
         <ResumeSection />
         <SkillsSection />
+        <WorkExperienceSection />
         <ProjectsSection />
         <ContactSection />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

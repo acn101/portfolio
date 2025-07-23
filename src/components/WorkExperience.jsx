@@ -1,31 +1,40 @@
 import { useState, useEffect } from "react";
 
-const projectsData = [
+const workExperienceData = [
   {
-    title: "Climate Convos",
+    title: "NeverEnding",
     description:
-      "An ios app meant to give people agency through conversations and knowledge about climate change.",
-    images: ["./cc.png"],
+      "A content creation platform for visual storytelling of TTRPG experiences.",
     exposition: [
-      "This is where it all began. I started my official journey down development through my capstone project during my final years of college by creating an ios app to spark conversation and interest around climate change. It taught me the importance of iteration, wireframes, agile methodology, and how to focus on user experience.",
-      "Throughout the project, my team spoke to stakeholders, conducted usability testing, and learned the tools we needed to make our vision a reality. It all started with a wireframe. From there, I was able to reorganize how the app would flow. Then I moved it to figma where I could see how the app would flow and fix it before spending too much time coding. Finally, I started coding the app and even introduced our mascot, Geo, half way through to add more engagement.",
-      "I ran into a lot of issues as a new developer, especially one who had never coded apps for the ios before. There were a lot of limitations when it came to app development that forced me to think outside the box to solve. If I were to create this app again, I would make it a website so it could be more widely accessible to our target audience, and I wouldn't run through the headaches of being restricted to Apple's development restrictions.",
+      "NeverEnding is when my career choices began to align. I've always enjoyed programming and building apps from the ground up. It started with simple challenges like learning the intricacies of a large code base to developing small components of the app. Before I knew it, I was building an app from the ground up. This meant taking on challenges like designing the layout, the functionality, architecting which libraries to use, how to manage state, and even integrate an AI library to detect expressions for facial animations.",
+      "I was also thrown into the world of CI/CD through Vercel where I had to deal with fun issues like CORS errors and failed builds due to conflicting libraries that had no issues running on my local machine. On top of that, I was allowed to develop code for the backend api using Python and Django which opened my eyes to how RESTful apis are created. As primarily a frontend developer, learning how our backend code worked made it a lot easier to communicated with the backend team since I knew what could and couldn't be done. As for my backend work, I was able to learn how to integrate payment systems into the app through PayPal and Shopify. Whether it was a subscription system, coupons, or creating accounts to use our app's marketplace, I learned a lot about the data sent between different companies and how to handle the successes (and the errors).",
     ],
-    url: "https://github.com/acn101/climate-convos",
-    posterImage: "./cc.png",
+    images: [
+      "./ne1.png",
+      "./ne2.png",
+      "./ne3.png",
+      "./ne5.png",
+      "./ne6.png",
+      "./ne7.png",
+    ],
+    url: "https://beneverending.com/",
+    posterImage: "./ne1.png",
   },
   {
-    title: "TBD",
+    title: "Digital Future Lab",
     description:
-      "A third person rogue-like shooter with randomized stages, items, and boss fights solo developed in Unreal Engine. A work in progress so check back soon!",
-    images: ["./comingsoon.png"],
-    exposition: [],
-    url: "",
-    posterImage: "./comingsoon.png",
+      "A casual puzzle game created in Unity with multiplayer and 60 unique levels.",
+    images: ["./dfl1.png", "dfl2.jpg", "dfl3.jpg", "dfl4.jpg"],
+    exposition: [
+      "The Digital Future Lab is where I got my feet wet in a larger team of coders, designers, artists, musicians, and the user base. I was brought on as a designer for another project that was a work in progress to design levels that would challenge our player's minds. I learned a lot about human centered design, creating fun and engaging user experiences, and how UI/UX design could be used to guide our players in certain directions wtihout outright telling them. It was fun to play with the tools the developers created, but I wanted to be the one creating those tools myself.",
+      "As a coder myself, I was eventually transitioned onto the development team for our flagship game, Ghostlight Manor. I learned source control tools, agile development, and got to use my insight a designer to create easy to use tools for the design team I was once on. My time as a developer was short, but I was able to create a computer controlled bot that would simulate player behavior. This was a feature we wanted to add as our multiplayer feature was just released to create a challenging player versus player experience even if you were playing alone. The bot itself started out dumb, zapping random spots on the board, but eventually improved with each iteration. It went from doing random inputs, to reading the map seed to better play agaiinst the player(s), and finally having different difficulties. As a developer, I loved the challenge of thinking outside the box and working on a large codebase that often caused merge conflicts.",
+    ],
+    url: "https://store.steampowered.com/app/559250/Ghostlight_Manor/",
+    posterImage: "./dfl1.png",
   },
 ];
 
-export default function ProjectsSection() {
+export default function WorkExperienceSection() {
   const [expandedProject, setExpandedProject] = useState(null);
   const [showExpanded, setShowExpanded] = useState(false);
   const [showList, setShowList] = useState(true);
@@ -58,7 +67,7 @@ export default function ProjectsSection() {
 
   return (
     <section
-      id="projects"
+      id="experience"
       className="bg-gray-50 dark:bg-gray-900 p-8 transition-colors duration-500 mb-12"
     >
       <div
@@ -70,10 +79,10 @@ export default function ProjectsSection() {
         style={{ height: showList ? "auto" : 0 }}
       >
         <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-gray-100">
-          Projects
+          Work Experience
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projectsData.map((project) => (
+          {workExperienceData.map((project) => (
             <button
               key={project.title}
               onClick={() => setExpandedProject(project)}
