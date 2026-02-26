@@ -14,15 +14,15 @@ const projectsData = [
     url: "https://github.com/acn101/climate-convos",
     posterImage: "./cc.png",
   },
-  {
-    title: "TBD",
-    description:
-      "A third person rogue-like shooter with randomized stages, items, and boss fights solo developed in Unreal Engine. A work in progress so check back soon!",
-    images: ["./comingsoon.png"],
-    exposition: [],
-    url: "",
-    posterImage: "./comingsoon.png",
-  },
+  // {
+  //   title: "TBD",
+  //   description:
+  //     "A third person rogue-like shooter with randomized stages, items, and boss fights solo developed in Unreal Engine. A work in progress so check back soon!",
+  //   images: ["./comingsoon.png"],
+  //   exposition: [],
+  //   url: "",
+  //   posterImage: "./comingsoon.png",
+  // },
 ];
 
 export default function ProjectsSection() {
